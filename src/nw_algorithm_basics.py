@@ -103,6 +103,7 @@ class Profile:
             try:
                 nucleotides.append(seq[index])
             except IndexError:
+                # Muy de vez en cuando pasa esto, pero no sucede casi nunca y me fui dificil debuggearlo
                 print("seq", len(seq))
                 print("index", index)
         for x in range(len(nucleotides)):
